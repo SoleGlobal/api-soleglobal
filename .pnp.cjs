@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["medusa-interfaces", "npm:1.3.7"],\
             ["medusa-payment-manual", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:1.0.24"],\
             ["medusa-payment-stripe", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:1.1.53"],\
+            ["medusa-react", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:9.0.3"],\
             ["typeorm", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:0.3.17"]\
           ],\
           "linkType": "SOFT"\
@@ -2864,6 +2865,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@medusajs/medusa-js", [\
+        ["npm:6.0.2", {\
+          "packageLocation": "./.yarn/cache/@medusajs-medusa-js-npm-6.0.2-9905ea075c-d589e7aa28.zip/node_modules/@medusajs/medusa-js/",\
+          "packageDependencies": [\
+            ["@medusajs/medusa-js", "npm:6.0.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:8c1df1e04795ce4abd9265b23654c06655bdc5a8f8b87a7534b2eb2ec19aab1cd612166e7eb2e13d716f9a14e4445db2c1db95fa3b4096beee58c4db59ee7238#npm:6.0.2", {\
+          "packageLocation": "./.yarn/__virtual__/@medusajs-medusa-js-virtual-ccdc79823a/0/cache/@medusajs-medusa-js-npm-6.0.2-9905ea075c-d589e7aa28.zip/node_modules/@medusajs/medusa-js/",\
+          "packageDependencies": [\
+            ["@medusajs/medusa-js", "virtual:8c1df1e04795ce4abd9265b23654c06655bdc5a8f8b87a7534b2eb2ec19aab1cd612166e7eb2e13d716f9a14e4445db2c1db95fa3b4096beee58c4db59ee7238#npm:6.0.2"],\
+            ["@medusajs/medusa", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:1.13.1"],\
+            ["@types/medusajs__medusa", null],\
+            ["axios", "npm:0.24.0"],\
+            ["cross-env", "npm:5.2.1"],\
+            ["qs", "npm:6.11.2"],\
+            ["retry-axios", "virtual:ccdc79823a02e7c8402b26310ff55461f8bef1c6c314adb8bf1f6a82d4bc377223811adf0611ded2696a176bebb0e6281e9d2fb60c656a9f3814da4a7a1450ca#npm:2.6.0"],\
+            ["uuid", "npm:9.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@medusajs/medusa",\
+            "@types/medusajs__medusa"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@medusajs/modules-sdk", [\
         ["npm:1.9.1", {\
           "packageLocation": "./.yarn/cache/@medusajs-modules-sdk-npm-1.9.1-cf7f09b2c9-8c42895bb5.zip/node_modules/@medusajs/modules-sdk/",\
@@ -3509,6 +3537,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/axios-npm-0.21.4-e278873748-44245f24ac.zip/node_modules/axios/",\
           "packageDependencies": [\
             ["axios", "npm:0.21.4"],\
+            ["follow-redirects", "virtual:e278873748b4e9d158db595d2f6cb0351c74052f52b53924aec4d9299e7b6babfb62aead374cf2f6e453bc8bea3b052380dc6b1137a162bbfc102bbb1c8cac42#npm:1.15.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.24.0", {\
+          "packageLocation": "./.yarn/cache/axios-npm-0.24.0-39e5c1e79e-468cf496c0.zip/node_modules/axios/",\
+          "packageDependencies": [\
+            ["axios", "npm:0.24.0"],\
             ["follow-redirects", "virtual:e278873748b4e9d158db595d2f6cb0351c74052f52b53924aec4d9299e7b6babfb62aead374cf2f6e453bc8bea3b052380dc6b1137a162bbfc102bbb1c8cac42#npm:1.15.2"]\
           ],\
           "linkType": "HARD"\
@@ -4519,7 +4555,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["cross-env", [\
+        ["npm:5.2.1", {\
+          "packageLocation": "./.yarn/cache/cross-env-npm-5.2.1-90c1c3d1d2-364f72482f.zip/node_modules/cross-env/",\
+          "packageDependencies": [\
+            ["cross-env", "npm:5.2.1"],\
+            ["cross-spawn", "npm:6.0.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["cross-spawn", [\
+        ["npm:6.0.5", {\
+          "packageLocation": "./.yarn/cache/cross-spawn-npm-6.0.5-2deab6c280-f893bb0d96.zip/node_modules/cross-spawn/",\
+          "packageDependencies": [\
+            ["cross-spawn", "npm:6.0.5"],\
+            ["nice-try", "npm:1.0.5"],\
+            ["path-key", "npm:2.0.1"],\
+            ["semver", "npm:5.7.2"],\
+            ["shebang-command", "npm:1.2.0"],\
+            ["which", "npm:1.3.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:7.0.3", {\
           "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.3-e4ff3e65b3-671cc7c728.zip/node_modules/cross-spawn/",\
           "packageDependencies": [\
@@ -6484,6 +6542,41 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["medusa-react", [\
+        ["npm:9.0.3", {\
+          "packageLocation": "./.yarn/cache/medusa-react-npm-9.0.3-628796e183-29bbd4bdb9.zip/node_modules/medusa-react/",\
+          "packageDependencies": [\
+            ["medusa-react", "npm:9.0.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:9.0.3", {\
+          "packageLocation": "./.yarn/__virtual__/medusa-react-virtual-8c1df1e047/0/cache/medusa-react-npm-9.0.3-628796e183-29bbd4bdb9.zip/node_modules/medusa-react/",\
+          "packageDependencies": [\
+            ["medusa-react", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:9.0.3"],\
+            ["@medusajs/medusa", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:1.13.1"],\
+            ["@medusajs/medusa-js", "virtual:8c1df1e04795ce4abd9265b23654c06655bdc5a8f8b87a7534b2eb2ec19aab1cd612166e7eb2e13d716f9a14e4445db2c1db95fa3b4096beee58c4db59ee7238#npm:6.0.2"],\
+            ["@tanstack/react-query", null],\
+            ["@types/medusajs__medusa", null],\
+            ["@types/react", null],\
+            ["@types/react-dom", null],\
+            ["@types/tanstack__react-query", null],\
+            ["react", null],\
+            ["react-dom", null]\
+          ],\
+          "packagePeers": [\
+            "@medusajs/medusa",\
+            "@tanstack/react-query",\
+            "@types/medusajs__medusa",\
+            "@types/react-dom",\
+            "@types/react",\
+            "@types/tanstack__react-query",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["medusa-starter-default", [\
         ["workspace:.", {\
           "packageLocation": "./",\
@@ -6500,6 +6593,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["medusa-interfaces", "npm:1.3.7"],\
             ["medusa-payment-manual", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:1.0.24"],\
             ["medusa-payment-stripe", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:1.1.53"],\
+            ["medusa-react", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:9.0.3"],\
             ["typeorm", "virtual:a5fee87f3c3594c5acca6ec31f6bab1bc61afaecd80153e4f2b329bc57f81708b48358b1e5d4ecf8598213963b7a93920b3564e39c2a68d82205530095876037#npm:0.3.17"]\
           ],\
           "linkType": "SOFT"\
@@ -6891,6 +6985,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/negotiator-npm-0.6.3-9d50e36171-b8ffeb1e26.zip/node_modules/negotiator/",\
           "packageDependencies": [\
             ["negotiator", "npm:0.6.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["nice-try", [\
+        ["npm:1.0.5", {\
+          "packageLocation": "./.yarn/cache/nice-try-npm-1.0.5-963856b16f-0b4af3b5bb.zip/node_modules/nice-try/",\
+          "packageDependencies": [\
+            ["nice-try", "npm:1.0.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7306,6 +7409,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["path-key", [\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/path-key-npm-2.0.1-b1a971833d-f7ab0ad42f.zip/node_modules/path-key/",\
+          "packageDependencies": [\
+            ["path-key", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:3.1.1", {\
           "packageLocation": "./.yarn/cache/path-key-npm-3.1.1-0e66ea8321-55cd7a9dd4.zip/node_modules/path-key/",\
           "packageDependencies": [\
@@ -7964,6 +8074,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["retry-axios", [\
+        ["npm:2.6.0", {\
+          "packageLocation": "./.yarn/cache/retry-axios-npm-2.6.0-d322b4f015-cf7e63d89f.zip/node_modules/retry-axios/",\
+          "packageDependencies": [\
+            ["retry-axios", "npm:2.6.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:ccdc79823a02e7c8402b26310ff55461f8bef1c6c314adb8bf1f6a82d4bc377223811adf0611ded2696a176bebb0e6281e9d2fb60c656a9f3814da4a7a1450ca#npm:2.6.0", {\
+          "packageLocation": "./.yarn/__virtual__/retry-axios-virtual-0583a226e3/0/cache/retry-axios-npm-2.6.0-d322b4f015-cf7e63d89f.zip/node_modules/retry-axios/",\
+          "packageDependencies": [\
+            ["retry-axios", "virtual:ccdc79823a02e7c8402b26310ff55461f8bef1c6c314adb8bf1f6a82d4bc377223811adf0611ded2696a176bebb0e6281e9d2fb60c656a9f3814da4a7a1450ca#npm:2.6.0"],\
+            ["@types/axios", null],\
+            ["axios", "npm:0.24.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/axios",\
+            "axios"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["reusify", [\
         ["npm:1.0.4", {\
           "packageLocation": "./.yarn/cache/reusify-npm-1.0.4-95ac4aec11-c3076ebcc2.zip/node_modules/reusify/",\
@@ -8160,6 +8292,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["shebang-command", [\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/shebang-command-npm-1.2.0-8990ba5d1d-9eed175030.zip/node_modules/shebang-command/",\
+          "packageDependencies": [\
+            ["shebang-command", "npm:1.2.0"],\
+            ["shebang-regex", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/shebang-command-npm-2.0.0-eb2b01921d-6b52fe8727.zip/node_modules/shebang-command/",\
           "packageDependencies": [\
@@ -8170,6 +8310,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["shebang-regex", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/shebang-regex-npm-1.0.0-c3612b74e9-404c5a752c.zip/node_modules/shebang-regex/",\
+          "packageDependencies": [\
+            ["shebang-regex", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:3.0.0", {\
           "packageLocation": "./.yarn/cache/shebang-regex-npm-3.0.0-899a0cd65e-1a2bcae50d.zip/node_modules/shebang-regex/",\
           "packageDependencies": [\
@@ -8971,6 +9118,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["which", [\
+        ["npm:1.3.1", {\
+          "packageLocation": "./.yarn/cache/which-npm-1.3.1-f0ebb8bdd8-f2e185c624.zip/node_modules/which/",\
+          "packageDependencies": [\
+            ["which", "npm:1.3.1"],\
+            ["isexe", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:2.0.2", {\
           "packageLocation": "./.yarn/cache/which-npm-2.0.2-320ddf72f7-1a5c563d3c.zip/node_modules/which/",\
           "packageDependencies": [\
